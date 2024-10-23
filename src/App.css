@@ -1,0 +1,310 @@
+.App {
+  width: 100%;
+  display: flex;
+  max-width: 98.5%;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-item {
+  height: 700px;
+}
+
+.welcome-image-heading {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  display: inline-flex;
+  justify-content: flex-start;
+
+  letter-spacing: 2px;
+}
+
+.hd-image {
+  /*   filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+
+.next-icon {
+  color: rgb(0, 0, 0);
+}
+
+.img-about {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+.mh-1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.curbutten {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .img-about {
+    width: 360px;
+    height: 210px;
+  }
+  .mh-1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .carousel-item {
+    height: 350px;
+  }
+  .hd-image {
+    /*     filter: blur(4px);
+    -webkit-filter: blur(4px); */
+  }
+  .welcome-image-heading {
+    font-size: 25px;
+    /*     color: rgba(0, 0, 0, 0.719); */
+    letter-spacing: 2px;
+  }
+  .aid-categories {
+    display: flex;
+    flex-direction: column;
+  }
+  .aid-section-container {
+    width: 98%;
+  }
+  .continer {
+    width: 98%;
+    margin: auto;
+    padding: 5px;
+  }
+  .continer1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .job-vacancies-container {
+    position: relative;
+    width: 97%;
+    margin: 30px auto;
+    height: 250px; /* Adjust height as needed */
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .highlighted-text {
+    position: absolute;
+    width: 97%;
+    top: 10%;
+    left: 10%;
+    transform: translate(-10%, -10%);
+    text-align: center;
+    color: white;
+  }
+
+  .introduction {
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 20px auto;
+    padding: 2px;
+  }
+  .introh6 {
+    font-weight: normal;
+    padding: 0px;
+    margin: auto;
+    font-size: 27px;
+    max-width: fit-content;
+  }
+  .volunteerco {
+    width: 95%;
+  }
+}
+
+/* introduction css */
+.introduction {
+  background-color: whitesmoke;
+  width: 98%;
+  margin: 80px auto;
+}
+.introh6 {
+  font-weight: bold;
+  padding: 60px;
+  margin: auto;
+  font-size: 27px;
+}
+
+.volunteerco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.volunteerh4 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.volunteerh6 {
+  font-size: 18px;
+  flex: 1;
+}
+
+/* AidSection.css */
+.aid-section-container {
+  text-align: center;
+  width: 98%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.aid-categories {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.aid-category {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.aid-category p {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+
+.aid-category:hover {
+  transform: translateY(-5px);
+}
+
+.see-more {
+  margin-top: 20px;
+}
+
+.donationbtn {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  background: linear-gradient(to top right, #c42a24, #ee8924);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.mdonationbtn {
+  width: 80px;
+  padding: 10px;
+  background: linear-gradient(to top right, #c42a24, #ee8924);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* homejob vancy section */
+
+.job-vacancies-container {
+  position: relative;
+  width: 97%;
+  margin: 30px auto;
+  height: 400px; /* Adjust height as needed */
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./pages/niber-bgg.png"); /* Specify your background image */
+  background-size: cover;
+  background-position: center;
+  /* filter: brightness(0.6); Adjust brightness of the background */
+}
+
+.highlighted-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.highlighted-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.highlighted-text p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.apply-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: brown; /* Customize button color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+  background-color: #d63600;
+}

@@ -1,0 +1,151 @@
+/* styles.css */
+
+.page-container {
+  max-width: 97%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sec1container {
+  display: flex;
+  width: 97%;
+  margin: 20px auto;
+  min-height: 300px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(to top right, #c42a24, #ee8924);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  gap: 70px;
+}
+.title {
+  padding: 10px;
+}
+.content {
+  flex: 1;
+}
+.content p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 23px;
+  line-height: normal;
+  letter-spacing: "0.05em";
+}
+
+.sec2container {
+  display: flex;
+  width: 97%;
+  margin: 20px auto;
+  min-height: 200px;
+  height: auto;
+  justify-content: center;
+  align-items: start;
+}
+.goalco {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 20px;
+  border-left: 15px solid orangered;
+  padding: 15px;
+}
+
+.gcontent {
+  max-width: 70%;
+}
+.gcontentp {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 23px;
+  line-height: normal;
+  letter-spacing: "0.05em";
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 768px) {
+  .container h1 {
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sec1container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px auto;
+    min-height: 150px;
+    gap: 0px;
+  }
+  .goalco {
+    margin-left: 5px;
+    border-left: 9px solid orangered;
+    padding: 10px;
+  }
+  .gcontent {
+    max-width: 100%;
+  }
+  .gcontentp {
+    font-size: 20px;
+  }
+
+  .slick {
+    height: 100px;
+    margin-right: 10px;
+  }
+  .slickimg {
+    width: calc(100% - 5px);
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .curselh {
+    margin-left: 15px;
+  }
+}
+.card {
+  width: 95%;
+  margin: auto;
+}
+.slick {
+  height: 200px;
+  margin-right: 10px;
+  position: relative;
+}
+.slickimg {
+  width: calc(100% - 20px);
+  height: auto;
+  margin-bottom: 20px;
+  object-fit: scale-down;
+}
+.slick-title {
+  position: absolute;
+  bottom: 0px; /* Adjust this value as needed */
+  left: 0;
+  right: 0;
+  text-align: start;
+  color: #fff; /* Text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+  padding: 7px; /* Adjust padding as needed */
+  width: calc(100% - 20px);
+  font-weight: bold;
+  font-size: 20px;
+}
+.cursel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+  padding: 20px;
+}
+
+.curselh {
+  margin-left: 30px;
+}
